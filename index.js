@@ -5,7 +5,7 @@ const app = express();
 const googleMapsClient = require('@google/maps').createClient({
     key: 'AIzaSyAOEXtFfROFentchCyCKzd8mLduhrEZ7Hk'
 });
-const port = 3000;
+const port = 3000 || process.env.PORT;
 
 //Middleware for cors
 app.use(cors());
